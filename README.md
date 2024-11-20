@@ -39,6 +39,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 - **[React Native](https://reactnative.dev/)**: Biblioteca para construção da interface de usuário mobile.
 - **[Expo](https://expo.dev/)**: Ferramenta para simplificar o desenvolvimento com React Native.
 - **[TypeScript](https://www.typescriptlang.org/)**: Para tipagem estática e melhorar a qualidade do código.
+
 ---
 
 ## 📦 **Instalação**
@@ -74,7 +75,10 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
   Após rodar o comando, um QR code será exibido no terminal. Use o Expo Go para escanear o QR code e testar o aplicativo no seu dispositivo físico.
 
-### 🤝 Contribuindo
+---  
+
+## 🤝 **Contribuindo**
+
 Contribuições são bem-vindas! Para contribuir com o projeto, siga os passos abaixo:
 
 Faça um fork do repositório.
@@ -93,6 +97,9 @@ git push origin minha-feature
 ```
 Abra um Pull Request para que possamos revisar e integrar sua contribuição.
 
-### 📜 Licença
+---
+
+## 📜 **Licença**
+
 Este projeto está licenciado sob a licença MIT.
 
