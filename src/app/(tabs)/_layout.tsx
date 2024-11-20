@@ -21,16 +21,16 @@ export default function TabLayout() {
             <FontAwesome size={28} name="archive" color={color} />
           ),
         }}
-      />
+      /> */}
       <Tabs.Screen
         name="about"
         options={{
-          title: 'Sobre mim',
+          title: 'Sobre',
           tabBarIcon: ({ color }) => (
             <FontAwesome size={28} name="user" color={color} />
           ),
         }}
-      /> */}
+      />
     </Tabs>
   )
 }
