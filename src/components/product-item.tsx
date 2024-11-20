@@ -1,38 +1,38 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import { Product } from '../types/product'
-import { Link } from 'expo-router'
+import { router } from 'expo-router'
 
 interface Props {
   data: Product
 }
 
 export function ProductItem({ data }: Props) {
+  const handleClick = () => {
+    router.push(`/product/${data.id}`)
+  }
   return (
-    <View style={{ marginBottom: 20 }}>
-      <Link href={`/product/${data.id}`}>
-        <Pressable style={styles.container}>
-          <Image
-            source={{ uri: data.image }}
-            alt=""
-            style={styles.img}
-            resizeMode="cover"
-          />
-          <View style={styles.info}>
-            <Text style={styles.title}>{data.title}</Text>
-            <Text style={styles.description}>{data.description}</Text>
-            <Text style={styles.price}>
-              $ {data.price.toFixed(2).replace('.', ',')}
-            </Text>
-          </View>
-        </Pressable>
-      </Link>
-    </View>
+    <Pressable onPress={handleClick} style={styles.container}>
+      <Image
+        source={{ uri: data.image }}
+        alt=""
+        style={styles.img}
+        resizeMode="cover"
+      />
+      <View style={styles.info}>
+        <Text style={styles.title}>{data.title}</Text>
+        <Text style={styles.description}>{data.description}</Text>
+        <Text style={styles.price}>
+          R$ {data.price.toFixed(2).replace('.', ',')}
+        </Text>
+      </View>
+    </Pressable>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    marginBottom: 20,
   },
   img: {
     width: 100,
